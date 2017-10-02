@@ -1,0 +1,45 @@
+h1{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+div#container {
+    /*border: 2px solid red;*/
+    /*padding: 5px auto;*/
+    margin: 0 auto;
+}
+
+table {
+    margin: 0 auto;
+}
+
+td {
+    height: 200px;
+    width: 200px;
+}
+
+.vertical {
+    border-left: 1px solid #000000;
+    border-right: 1px solid #000000;
+}
+
+.horizontal {
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+}
+
+/*tr#r1 td {
+    border-top: none;
+}
+
+tr#r3 td {
+    border-bottom: none;
+}
+
+.lf {
+    border-left: 1px solid #ffffff;
+}
+
+.rt {
+    border-right: 1px solid #ffffff;
+}*/
