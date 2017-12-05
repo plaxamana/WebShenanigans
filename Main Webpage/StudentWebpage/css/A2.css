@@ -1,0 +1,81 @@
+#dateTimeContainer{
+	/*background-color: lightgrey;*/
+    max-width: 1025px;
+	height: 90px;
+    padding: 20px;
+    /*border: 10px solid navy;*/   
+    margin: 30px auto;
+}
+
+.dateTimeBox{
+	border-radius: 8px;
+	background-color: white;
+    min-width: 400px;
+	height: 50px;
+    padding: 10px;
+	margin: 0 30px;
+    border: 3px solid black;
+    float: left;
+}
+
+.dateTimeBox2{
+	border-radius: 8px;
+	background-color: white;
+    min-width: 400px;
+	height: 50px;
+    padding: 10px;
+	margin: 0 30px;
+    border: 3px solid black;
+    float: right;
+}
+
+.dateTime{
+	color:black;
+	font-weight: bold;
+	text-align: center;
+    margin: 5px;
+    display: inline-block;
+} 
+
+.banner{
+	background: white;
+	text-align: center;
+	display: block;
+	width: 100%;
+}
+
+.productContainer{
+    width: 85%;
+    padding: 30px;
+    margin: 0 auto;
+    /*background-color: yellow;*/
+    height: 300px;
+    border-radius: 5px;
+    border: 5px none #002F65;
+}
+
+.productPic{
+    width: 400px;
+    height: 300px;
+    background: url(../images/A2/pokeball1.jpg) no-repeat;
+    /*border: 5px solid red;*/
+    float: left;
+}
+
+.productDesc{
+    display: inline-block;
+    width: 57%;
+    text-align: left;
+    font-family: Arial, serif, sans-serif;   
+    margin-left: 15px;
+    /*border: 5px dashed blue;*/
+}
+
+.favBrand{
+    border: 2px solid black;
+	border-radius: 5px;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: Arial, sans-serif, serif;
+}

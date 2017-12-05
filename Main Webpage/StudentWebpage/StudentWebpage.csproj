@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B7765E50-931B-4AFF-95EF-4DACCDB7236F}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>StudentWebpage</RootNamespace>
+    <AssemblyName>StudentWebpage</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="1practicaltest.html" />
+    <Content Include="A2.html" />
+    <Content Include="A2\A2.html" />
+    <Content Include="A2\A2css.css" />
+    <Content Include="A2\A2js.js" />
+    <Content Include="A2\images\bannertoronto.jpg" />
+    <Content Include="A2\images\torontoskyline.jpg" />
+    <Content Include="css\1ptCSS.css" />
+    <Content Include="css\A2.css" />
+    <Content Include="css\myCSS.css" />
+    <Content Include="css\pt1.css" />
+    <Content Include="css\reset.css" />
+    <Content Include="Example\exJS.js" />
+    <Content Include="Example\exPage.html" />
+    <Content Include="font-awesome-4.4.0\css\WS_FTP.LOG" />
+    <Content Include="font-awesome-4.4.0\fonts\fontawesome-webfont.eot" />
+    <Content Include="font-awesome-4.4.0\fonts\fontawesome-webfont.ttf" />
+    <Content Include="font-awesome-4.4.0\fonts\fontawesome-webfont.woff" />
+    <Content Include="font-awesome-4.4.0\fonts\fontawesome-webfont.woff2" />
+    <Content Include="font-awesome-4.4.0\fonts\FontAwesome.otf" />
+    <Content Include="font-awesome-4.4.0\fonts\WS_FTP.LOG" />
+    <Content Include="font-awesome-4.4.0\less\animated.less" />
+    <Content Include="font-awesome-4.4.0\less\bordered-pulled.less" />
+    <Content Include="font-awesome-4.4.0\less\core.less" />
+    <Content Include="font-awesome-4.4.0\less\fixed-width.less" />
+    <Content Include="font-awesome-4.4.0\less\font-awesome.less" />
+    <Content Include="font-awesome-4.4.0\less\icons.less" />
+    <Content Include="font-awesome-4.4.0\less\larger.less" />
+    <Content Include="font-awesome-4.4.0\less\list.less" />
+    <Content Include="font-awesome-4.4.0\less\mixins.less" />
+    <Content Include="font-awesome-4.4.0\less\path.less" />
+    <Content Include="font-awesome-4.4.0\less\rotated-flipped.less" />
+    <Content Include="font-awesome-4.4.0\less\stacked.less" />
+    <Content Include="font-awesome-4.4.0\less\variables.less" />
+    <Content Include="font-awesome-4.4.0\less\WS_FTP.LOG" />
+    <Content Include="font-awesome-4.4.0\scss\font-awesome.scss" />
+    <Content Include="font-awesome-4.4.0\scss\WS_FTP.LOG" />
+    <Content Include="font-awesome-4.4.0\scss\_animated.scss" />
+    <Content Include="font-awesome-4.4.0\scss\_bordered-pulled.scss" />
+    <Content Include="font-awesome-4.4.0\scss\_core.scss" />
+    <Content Include="font-awesome-4.4.0\scss\_fixed-width.scss" />
+    <Content Include="font-awesome-4.4.0\scss\_icons.scss" />
+    <Content Include="font-awesome-4.4.0\scss\_larger.scss" />
+    <Content Include="font-awesome-4.4.0\scss\_list.scss" />
+    <Content Include="font-awesome-4.4.0\scss\_mixins.scss" />
+    <Content Include="font-awesome-4.4.0\scss\_path.scss" />
+    <Content Include="font-awesome-4.4.0\scss\_rotated-flipped.scss" />
+    <Content Include="font-awesome-4.4.0\scss\_stacked.scss" />
+    <Content Include="font-awesome-4.4.0\scss\_variables.scss" />
+    <Content Include="font-awesome-4.4.0\WS_FTP.LOG" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="font-awesome-4.4.0\css\font-awesome.css" />
+    <Content Include="font-awesome-4.4.0\css\font-awesome.min.css" />
+    <Content Include="font-awesome-4.4.0\fonts\fontawesome-webfont.svg" />
+    <Content Include="font-awesome-4.4.0\HELP-US-OUT.txt" />
+    <Content Include="images\bullet_z.jpg" />
+    <Content Include="images\CClogo.jpg" />
+    <Content Include="images\Centennial-Logo.jpg" />
+    <Content Include="images\centennialcollege1.jpg" />
+    <Content Include="images\centennialcollege2.jpg" />
+    <Content Include="images\centennialcollege3.jpg" />
+    <Content Include="images\Pikachu_250.png" />
+    <Content Include="images\Toronto_lights.jpg" />
+    <Content Include="index.html" />
+    <Content Include="js\1pt.js" />
+    <Content Include="js\A2.js" />
+    <Content Include="js\A3.js" />
+    <Content Include="js\bugSmash.js" />
+    <Content Include="js\goblinGameEx.js" />
+    <Content Include="js\pt.js" />
+    <Content Include="PracticalTest.html" />
+    <Content Include="vehicleReserved.html" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>41109</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:41109/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

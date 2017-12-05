@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <script src="js/1pt.js" type="text/javascript"></script>
+    <link href="css/1ptCSS.css" type="text/css" rel="stylesheet" />
+
+    <title>Pracitcal Test</title>
+</head>
+
+<body>
+    <div class="banner">
+        <img src="images/PracticalTest1/bmw4series.jpg" />
+    </div>
+
+    <h1>Please fill in this form to reserve a vehicle:</h1>
+    <form name="vehicleReserve" onsubmit="return formValidation();" method="get" action="vehicleReserved.html">
+            <table id="ContactInfo">
+                <thead>
+                    <tr>
+                        <th style="text-align:left;">Your contact information: </th>
+                    </tr>
+                </thead>
+                <tr>
+                    <td id="tdLabel">Phone: </td>
+                    <td><input name="phone" id="phone" type="text"></td>
+                </tr>   
+                <tr>
+                    <td id="tdLabel">E-Mail: </td>
+                    <td><input name="email" id="email" type="text"></td>
+                </tr>
+                <tr>
+                    <td><p></p></td>
+                </tr>
+                <tr>
+                    <td id="tdLabel">Vehicle Type: </td>
+                    <td><span id="MinivanColor"><input type="radio" name="vehicleType" id="minivan" onclick="Minivan();">Minivan</span></td>
+                    <td></td>
+                    <td><span id="CarColor"><input type="radio" name="vehicleType" id="car" onclick="car();">Car</span></td>
+                </tr>
+                <tr>
+                    <td><p></p></td>
+                </tr>
+                <tr>
+                    <td>Complete only if you want to rent a car (not a minivan!): </td>
+                </tr>
+                <tr>
+                    <td><p></p></td>
+                </tr>
+                <tr>
+                    <td id="tdLabel">Enter Preferred Make: </td>
+                    <td><input name="preferredMake" id="make" type="text"></td>
+                </tr>
+                <tr>
+                    <td id="tdLabel">Enter Preferred Model: </td>
+                    <td><input name="preferredModel" id="model" type="text"></td>
+                </tr>
+                <tr>
+                    <td><p></p></td>
+                </tr>
+                <tr>
+                    <th style="text-align:left;">Rental Details: </th>
+                </tr>
+                <tr>
+                    <td><p></p></td>
+                </tr>
+                <tr>
+                    <td>Choose Preferred Pickup Location: </td>
+                    <td>
+                        <select id="pickupLoc">
+                            <option value="noneselected">--no location selected--</option>
+                            <option value="road">Downtown</option>
+                            <option value="road">Airport</option>
+                            <option value="road">Central Station</option>
+                            <option value="road">123 Main St.</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><p></p></td>
+                </tr>
+                <tr>
+                    <td style="text-align:left;"><b>Enter Start Date: </b></td>
+                </tr>
+                <tr>
+                    <td id="tdLabel">Month: </td>
+                    <td><input name="month" id="month" type="text"></td>
+                </tr>
+                <tr>
+                    <td id="tdLabel">Day: </td>
+                    <td><input name="day" id="day" type="text"></td>
+                </tr>
+                <tr>
+                    <td><p></p></td>
+                </tr>
+                <tr>
+                    <td><input id="submit" type="submit" value="Request Vehicle">
+                    <input id="reset" type="reset" value="Start Again">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    <footer>
+        <span class="cpright">Philip Laxamana &copy; | student id: 300711308 |Centennial College</span>
+    </footer>
+</body>
+</html>

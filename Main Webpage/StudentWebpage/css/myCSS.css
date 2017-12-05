@@ -1,0 +1,394 @@
+﻿* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+div.mainContainer {
+    width:1200px;
+    padding: 25px;
+    margin-left:auto; 
+    margin-right:auto;
+    /*border: 10px dashed red;*/
+    /*background-color: white;*/
+}
+
+body{
+    background: #f0f0f0;
+    font: 14px/20px Arial, San-serif;
+    color: #555;
+    margin: 0;
+}
+
+body.A2{
+    background: white;
+    font: 14px/20px Arial, San-serif;
+    color: black;
+    margin: 0;
+}
+
+div.address ul li{
+    color: #f0f0f0;
+}
+
+h1{
+    text-align: center;
+    font-size: 180%;
+    line-height: 120%;
+    padding: 5% 0;
+}
+
+h2{
+    text-decoration: underline;
+    line-height: 280%;
+    padding-left: 2%;
+}
+
+h3{
+    line-height: 110%;
+    padding: 5% 0;
+}
+
+p{
+    padding: 1%;
+}
+
+img {
+    text-align: center;
+    max-width: 100%;
+    height: auto;
+    width: auto;
+}
+
+a {
+    color: #FFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #FFF;
+    text-decoration: underline;
+}
+
+header {
+    background: #002F65;
+    width: 100%;
+    height: 86px;
+    position: fixed;
+    padding: 10px;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    opacity: 0.90;
+}
+
+.spacer {
+    width: 100%;
+    height: 105px;
+}
+#logo {
+    margin: 20px;
+    float: left;
+    width: 116px;
+    height: 75px;
+    background: url(../images/logoForMenu.png) no-repeat center;
+}
+
+nav {
+    float: right;
+    padding: 35px 20px 20px 0;
+}
+
+#menu-icon{
+    display: hidden;
+    width: 40px;
+    height: 40px;
+    background: url(https://cdn.css-tricks.com/wp-content/uploads/2012/10/threelines.png) center;
+}
+
+a:hover #menu-icon {
+    border-radius: 4px 4px 0 0;
+}
+
+ul {
+    list-style: none;
+}
+
+ul.bullet{
+    list-style-image: url(images/bullet_z.jpg);
+    padding-left: 60px;
+}
+
+li.bullet {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    float: left;
+    padding: 10px;
+}
+
+nav ul li:hover{
+    background-color: #001C3D;
+}
+
+
+
+nav ul li a:hover{
+    color: #FFF;
+    text-decoration: none;
+}
+
+nav ul li:hover ul{
+    display: block; 
+    color:#FFF;
+}
+
+nav ul ul{
+    display: none;
+    position: absolute;
+    background-color: #001C3D;
+    border-top: 0;
+}
+
+nav ul ul li{
+    display: block;
+}
+
+nav ul ul li a{
+    color: #ccc;
+}
+
+nav ul ul li a:hover{
+    background-color: #C0143C;
+    padding: 2px 2px;
+}
+
+
+.current{
+    color: #FFF;
+    text-decoration: underline;
+}
+
+#doc {
+    margin: 40px 0;
+}
+
+#content {
+    margin: 0 auto;
+    margin-top: 110px;
+    max-width: 1140px;
+}
+
+.blueberry{
+    max-width: 960px;
+    margin-top: 110px;
+}
+
+section {
+    width: 29%;
+    float: left;
+    margin: 2% 2%;
+    text-align: center;
+}
+
+.clear{
+    clear: both;
+}
+
+article{
+    float: left;
+    margin: 0 auto;
+    width: 50%;
+    height: auto;
+    padding: 4%;
+}
+
+aside {
+    float: right;
+    margin: 0 auto;
+    width: 35%;
+    height: auto;
+    padding: 3%;
+}
+
+ul.hours {
+    padding-left: 3%;
+}
+
+footer {
+    clear: both;
+    background: #333333;
+    width: 100%;
+    overflow: hidden;
+    opacity: 0.90;
+    position: relative;
+}
+
+footer p, footer h3{
+    color: #f0f0f0;
+}
+
+footer p a{
+    color: #f0f0f0;
+    text-decoration: none;
+}
+
+ul.social li{
+    display: inline;
+    padding: 5px;
+}
+
+ul.social li img{
+    height: 50px;
+}
+
+footer.second {
+    border-top: 1px solid #4D4E50;
+    background-color: #333333;
+    max-height: 50px;
+    text-align: center;
+    opacity: 0.95;
+}
+
+#container {
+    text-align: justify;
+    -ms-text-justify: distribute-all-lines;
+    text-justify: distribute-all-lines;
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    vertical-align: top;
+    display: inline-block;
+    *display: inline;
+    margin:10px;
+    zoom: 1
+}
+.stretch {
+    width: 100%;
+    display: inline-block;
+    font-size: 0;
+    line-height: 0
+}
+
+form.nonfunctioning{
+    padding: 5px 5px;
+    margin: 10%;
+}
+
+.labels {
+    font-weight: bold;
+    padding: 0;
+    border-style: ridge;
+    border-color: #000;
+}
+
+div .wrapform{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    width: 80%;
+    text-align: center;
+}
+
+.formMessage {
+    margin:0;
+    padding: 5px 5px;
+}
+
+.formInput {
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 5px 0 0 5px;
+}
+
+#formwrap {
+    width: 750px;
+    margin-left: 0 auto;
+    float: left;
+}
+
+#info {
+    width: 500px;
+    float: right;
+}
+
+#map {
+    height: 500px;
+    width: 400px;
+    background: #000;
+}
+
+#customer_info label {
+    float: left;
+    width: 100px;
+    text-align: left;
+    margin-right: 10px;
+}
+
+fieldset {
+    width: 100%;
+    font-weight: bold;
+}
+
+
+/*---------------MEDIA------------------*/
+
+@media screen and (max-width: 478px) {
+    body {
+        position: absolute;
+    }
+}
+
+@media screen and (max-width: 740px){
+    header {
+        position: absolute;
+    }
+    #menu-icon{
+        display: inline-block;
+    }
+    nav ul, nav:active ul{
+        display: none;
+        position: absolute;
+        padding: 20px;
+        background: #405580;
+        border: 1px solid #f0f0f0;
+        right: 20px;
+        top: 60px;
+        width: 50%;
+        border-radius: 2px 0 2px 2px;
+    }
+    nav li{
+        text-align: center;
+        width: 100%;
+        padding: 10px 0;
+        margin: 0;
+    }
+    nav:hover ul{
+        display: block;
+    }
+    section {
+        float: left;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    article {
+        float: left;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    aside {
+        float: left;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+}

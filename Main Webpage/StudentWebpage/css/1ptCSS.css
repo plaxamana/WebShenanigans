@@ -1,0 +1,20 @@
+﻿body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+label#tdLabel {
+    text-align: right;
+    font-weight: bold;
+}
+
+.banner{
+	background: white;
+	text-align: center;
+	display: block;
+	width: 100%;
+}
+
+.cpright {
+    font-size: 10px;
+    color: gray;
+}

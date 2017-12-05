@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+
+    <link rel="stylesheet" href="css/myCSS.css" type="text/css" />
+    <link href="font-awesome-4.4.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="font-awesome-4.4.0/css/font-awesome.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+	<script src="js/A3.js"></script>
+	
+
+
+    <title>Home - Philip Laxamana</title>
+</head>
+
+<body>
+    <header>
+        <a href="http://centennialcollege.ca" id="logo"></a>
+        <nav>
+            <a href="#" id="menu-icon"></a>
+            <ul>
+                <li><i class="fa fa-home"></i>&nbsp;<a href="index.html">Home</a></li>
+                <li>
+                    <i class="fa fa-arrow-down">&nbsp;</i><a href="#" class="current">Assignments</a>
+                    <ul>
+                        <li><a href="A2.html">Assignment 2</a></li>
+						<li><a href="#" class="current" >Assignment 3</a></li>
+                        <li><a href="A4.html">Assignment 4</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <i class="fa fa-clipboard"></i>&nbsp;<a href="#">Practical Tests</a>
+                    <ul>
+                        <li><a href="1practicaltest.html">Midterm Practical Exam</a></li>
+                    </ul>
+                </li>
+                <li><i class="fa fa-sitemap"></i>&nbsp;<a href="sitemap_credits.html">Site Map</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="spacer">&nbsp;&nbsp;</div>
+
+    <div class="mainContainer">
+		<h3>Member Registration</h3>
+		<p>Please complete all the fields below: </p>
+		
+		<form name="registration" onsubmit="validateForm();" method="post">
+			<table id="registrationTable">
+				<tr>
+					<td>First Name </td>
+					<td><input name="fname" id="firstName" type="text" ></td>
+					<td>Last Name </td>
+					<td><input name="lname" id="lastName" type="text"></td>
+				</tr>
+				<tr>
+					<td>Address </td>
+					<td><input id="address" type="text"></input></td>
+					<td>City </td>
+					<td><input id="city" type="text"></input></td>
+				</tr>
+				<tr>
+					<td>Province </td>
+					<td><input id="province" type="text"></input></td>
+					<td>Postal Code </td>
+					<td><input id="postalCode" type="text"></input></td>
+				</tr>
+				<tr>
+					<td>Password </td>
+					<td><input id="password" type="password"></input></td>
+					<td>Confirm (password) </td>
+					<td><input id="confirm" type="password"></input></td>
+				</tr>
+				<tr>
+					<td>E-Mail </td>
+					<td><input id="email" type="text"></input></td>
+					<td>Age </td>
+					<td><input id="age" type="text"</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><input id="submit" type="submit" value="Register Now"></td>
+					<td></td>
+					<td><input id="reset" type="reset" value="Clear Form"</td>
+				</tr>
+			</table>
+		</form>
+		<br /> <br />
+	</div>
+
+	<div class="clear"></div>
+
+    <footer>
+        <section>
+            <h3><b>Contact Info:</b></h3>
+            <p><b>Philip Laxamana</b></p><br />
+            <p><b>Email:  plaxaman@my.centennialcollge.ca</b></p>
+            <div class="address">
+                <ul>
+                    <li>941 Progress Ave</li>
+                    <li>Toronto, ON CANADA</li>
+                    <li>M1G 3T8</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h3>Connect With Me!</h3>
+            <ul class="social">
+                <li><a href="http://facebook.com/mrphiru"><img src="images/fblogo.png" alt="Facebook" /></a></li>
+                <li><a href="https://twitter.com/MrPhiru"><img src="images/twitterlogo.jpg" alt="Twitter" /></a></li>
+                <li><a href="https://ca.linkedin.com/in/plaxamana"><img src="images/linkedinlogo.png" alt="LinkedIn" /></a></li>
+            </ul>
+        </section>
+
+        <section></section>
+
+        <footer id="second">
+            <p>Copyright &#169; Philip Laxamana | Centennial College</p>
+        </footer>
+
+    </footer>
+</body>
+</html>

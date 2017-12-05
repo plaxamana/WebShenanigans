@@ -1,0 +1,173 @@
+﻿<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+
+    <link rel="stylesheet" href="blueberry.css" />
+    <link rel="stylesheet" href="css/myCSS.css" type="text/css" />
+    <script src="js/A2.js"></script>
+    <link href="font-awesome-4.4.0/css/font-awesome.css" rel="stylesheet" />
+    <link href="font-awesome-4.4.0/css/font-awesome.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="css/A2.css" type="text/css" />
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <!-- <link rel="stylesheet" href="reset.css" type="text/css" /> -->
+
+    <title>Assignment #2</title>
+</head>
+<body class="A2">
+    <header>
+        <a href="http://centennialcollege.ca" id="logo"></a>
+        <nav>
+            <a href="#" id="menu-icon"></a>
+            <ul>
+                <li><i class="fa fa-home"></i>&nbsp;<a href="index.html">Home</a></li>
+                <li>
+                    <i class="fa fa-arrow-down">&nbsp;</i><a href="#" class="current">Assignments</a>
+                    <ul>
+                        <li><a href="#" class="current">Assignment 2</a></li>
+                        <li><a href="A3.html">Assignment 3</a></li>
+                        <li><a href="A4.html">Assignment 4</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <i class="fa fa-clipboard"></i>&nbsp;<a href="#">Practical Tests</a>
+                    <ul>
+                        <li><a href="1practicaltest.html">Midterm Practical Exam</a></li>
+                    </ul>
+                </li>
+                <li><i class="fa fa-sitemap"></i>&nbsp;<a href="sitemap_credits.html">Site Map</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="spacer">
+        &nbsp; &nbsp; &nbsp;
+    </div>
+    <div class="clear"></div>
+    <div class="banner">
+        <img src="images/A2/pokemonbanner.jpg" />
+    </div>
+    <div class="mainContainer">
+        <div id="dateTimeContainer">
+            <div class="dateTimeBox">
+                <p class="dateTime" id="month"></p>
+                <p class="dateTime" id="date"></p>
+                <p class="dateTime" id="year"></p>
+            </div>
+            <div class="dateTimeBox2">
+                <p class="dateTime" id="time"></p>
+            </div>
+            <script>
+                var d = new Date();
+                var month = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+                var date = d.getDate();
+
+                var h = d.getHours();
+                var m = d.getMinutes();
+                var s = d.getSeconds();
+                m = mZero(m);
+                s = mZero(s);
+
+                //Time
+
+                document.getElementById("time").innerHTML = h + ":" + m + ":" + s;
+
+                function mZero(i) {
+                    if (i < 10) { i = "0" + i };
+                    return i;
+                }
+
+
+                //Month
+
+                document.getElementById("month").innerHTML = month[d.getMonth()] + "  ";
+
+                //Day
+
+                if (date == 1) {
+                    document.getElementById("date").innerHTML = d.getDate() + "st,";
+                }
+                else if (date == 2) {
+                    document.getElementById("date").innerHTML = d.getDate() + "nd,";
+                }
+                else if (date == 3) {
+                    document.getElementById("date").innerHTML = d.getDate() + "rd,";
+                }
+                else if (date >= 4) {
+                    document.getElementById("date").innerHTML = d.getDate() + "th,";
+                }
+
+
+                //year
+
+                document.getElementById("year").innerHTML = d.getFullYear();
+
+
+            </script>
+
+        </div>
+        <div class="productContainer">
+            <div class="productPic"></div>
+            <div class="productDesc">
+                <h1>The Pokeball</h1>
+                <p style="text-align: center;"><i>The ball catcher</i></p>
+                <p>
+                    A Poké Ball (Japanese: モンスターボール Monster Ball) is a type of item that is critical to a Trainer's quest,
+                    used for catching and storing Pokémon. Both a general term used to describe the various kinds as well as a specific term
+                    to refer to the most basic among these variations, Poké Balls are ubiquitous in the modern Pokémon world. Up to six Pokémon
+                    can be carried with a Trainer in Poké Balls, while any number of other Poké Balls can be held in the Bag for later use. These
+                    six Pokémon in the Poké Balls can be attached to the user's belt for carrying them around.
+                </p>
+            </div>
+        </div>
+        <section class="favBrand">
+            <p>Your favourite brand is: </p>
+            <br />
+            <p id="brand"></p>
+        </section>
+        <script>
+            var brand = prompt("What is your favourite brand of XXXXXXX products?", "none") + " ";
+            var amount = prompt("On a scale of 1 to 100, how much do you like it?", "80");
+
+            var unknown = brand.repeat(amount);
+            var newColor = "#" + Math.floor(Math.random() * 16777215).toString(16);
+
+            document.getElementById('brand').style.color = newColor;
+            document.getElementById('brand').innerHTML = unknown;
+        </script>
+    </div>
+    <div class="clear"></div>
+
+    <footer>
+        <section>
+            <h3><b>Contact Info:</b></h3>
+            <p><b>Philip Laxamana</b></p><br />
+            <p><b>Email:  plaxaman@my.centennialcollge.ca</b></p>
+            <div class="address">
+                <ul>
+                    <li>91 Carlton St</li>
+                    <li>Toronto, ON CANADA</li>
+                    <li>M5B 2J7</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h3>Connect With Me!</h3>
+            <ul class="social">
+                <li><a href="#"><img src="images/fblogo.png" alt="Facebook" /></a></li>
+                <li><a href="#"><img src="images/twitterlogo.jpg" alt="Twitter" /></a></li>
+                <li><a href="#"><img src="images/linkedinlogo.png" alt="LinkedIn" /></a></li>
+            </ul>
+        </section>
+
+        <section></section>
+
+        <footer id="second">
+            <p>Copyright &#169; Philip Laxamana | Centennial College</p>
+        </footer>
+
+    </footer>
+</body>
+</html>

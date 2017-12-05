@@ -1,0 +1,174 @@
+﻿<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+
+    <link rel="stylesheet" href="css/myCSS.css" type="text/css" />
+    <link rel="stylesheet" href="css/pt1.css" type="text/css" />
+    <link href="font-awesome-4.4.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="font-awesome-4.4.0/css/font-awesome.css" rel="stylesheet" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+    <script src="js/pt.js"></script>
+
+
+    <title>Home - Philip Laxamana</title>
+</head>
+
+<body>
+    <header>
+        <a href="http://centennialcollege.ca" id="logo"></a>
+        <nav>
+            <a href="#" id="menu-icon"></a>
+            <ul>
+                <li><i class="fa fa-home"></i>&nbsp;<a href="#top">Home</a></li>
+                <li>
+                    <i class="fa fa-arrow-down">&nbsp;</i><a href="#">Assignments</a>
+                    <ul>
+                        <li><a href="A2.html">Assignment 2</a></li>
+                        <li><a href="A3.html">Assignment 3</a></li>
+                        <li><a href="A4.html">Assignment 4</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <i class="fa fa-clipboard"></i>&nbsp;<a href="#">Practical Tests</a>
+                    <ul>
+                        <li><a href="#" class="current">Practical Test 1</a></li>
+                    </ul>
+                </li>
+                <li><i class="fa fa-sitemap"></i>&nbsp;<a href="sitemap_credits.html">Site Map</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="spacer">&nbsp;&nbsp;</div>
+
+        <div class="banner">
+        <img src="images/PracticalTest1/bmw4series.jpg" />
+    </div>
+    <div class="mainContainer">
+
+        <h3>Please fill in this form to reserve a vehicle: </h3>
+
+        <form name="vehicleReserve" onsubmit="validateForm();" method="post">
+            <table id="ContactInfo">
+                <thead>
+                    <tr>
+                        <th style="text-align:left;">Your contact information: </th>
+                    </tr>
+                </thead>
+                <tr>
+                    <td>Phone: </td>
+                    <td><input name="phone" id="phone" type="text"></td>
+                </tr>   
+                <tr>
+                    <td>E-Mail: </td>
+                    <td><input id="email" type="text"></td>
+                </tr>
+                <tr>
+                    <td style="color:#f0f0f0;"> some blank space (undetected) </td>
+                </tr>
+                <tr>
+                    <td>Vehicle Type: </td>
+                    <td><input type="radio" name="vehicleType" id="minivan" value="Minivan" >Minivan</td>
+                    <td></td>
+                    <td><input type="radio" name="vehicleType" id="car" value="Car">Car</td>
+                </tr>
+                <tr>
+                    <td style="color:#f0f0f0;">Some blank text</td>
+                </tr>
+                <tr>
+                    <td>Complete only if you want to rent a car (not a minivan!): </td>
+                </tr>
+                <tr>
+                    <td style="color:#f0f0f0;">Some blank text</td>
+                </tr>
+                <tr>
+                    <td>Enter Preferred Make: </td>
+                    <td><input name="preferredMake" id="make" type="text"></td>
+                </tr>
+                <tr>
+                    <td>Enter Preferred Model: </td>
+                    <td><input name="preferredModel" id="model" type="text"></td>
+                </tr>
+                <tr>
+                    <td style="color:#f0f0f0;">Some blank text</td>
+                </tr>
+                <tr>
+                    <th style="text-align:left;">Rental Details: </th>
+                </tr>
+                <tr>
+                    <td style="color:#f0f0f0;">Some blank text</td>
+                </tr>
+                <tr>
+                    <td>Choose Preferred Pickup Location: </td>
+                    <td>
+                        <select>
+                            <option vale="noneselected">--no location selected--</option>
+                            <option value="road">1578 Shepperd Ave E.</option>
+                            <option value="road">1738 Kennedy Rd.</option>
+                            <option value="road">500 Main St. W.</option>
+                            <option value="road">123 Main St.</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="color:#f0f0f0;">Some blank text</td>
+                </tr>
+                <tr>
+                    <td style="text-align:left;">Enter Start Date: </td>
+                </tr>
+                <tr>
+                    <td>Month: </td>
+                    <td><input name="month" id="month" type="text"></td>
+                </tr>
+                <tr>
+                    <td>Day: </td>
+                    <td><input name="day" id="day" type="text"></td>
+                </tr>
+                <tr>
+                    <td style="color:#f0f0f0;">Some blank text</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input id="submit" type="submit" value="Request Vehicle"></td>
+                    <td></td>
+                    <td><input id="reset" type="reset" value="Start Again"></td>
+                </tr>
+            </table>
+        </form>
+
+    </div>
+    <footer>
+        <section>
+            <h3><b>Contact Info:</b></h3>
+            <p><b>Philip Laxamana</b></p><br />
+            <p><b>Email:  plaxaman@my.centennialcollge.ca</b></p>
+            <div class="address">
+                <ul>
+                    <li>941 Progress Ave</li>
+                    <li>Toronto, ON CANADA</li>
+                    <li>M1G 3T8</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h3>Connect With Me!</h3>
+            <ul class="social">
+                <li><a href="http://facebook.com/mrphiru"><img src="images/fblogo.png" alt="Facebook" /></a></li>
+                <li><a href="https://twitter.com/MrPhiru"><img src="images/twitterlogo.jpg" alt="Twitter" /></a></li>
+                <li><a href="https://ca.linkedin.com/in/plaxamana"><img src="images/linkedinlogo.png" alt="LinkedIn" /></a></li>
+            </ul>
+        </section>
+
+        <section></section>
+
+        <footer id="second">
+            <p>Copyright &#169; Philip Laxamana 300711308 | Centennial College</p>
+        </footer>
+
+    </footer>
+</body>
+</html>
