@@ -1,0 +1,182 @@
+﻿<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+
+    <link rel="stylesheet" href="blueberry.css" />
+    <link rel="stylesheet" href="realestate.css" type="text/css" />
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+
+    <script>
+        function initMap() {
+            var myLatLng = { lat: 43.6621332, lng: -79.3780499 };
+
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 7,
+                center: myLatLng
+            });
+
+            var marker = new google.maps.Marker({
+                position: myLatLng,
+                map: map,
+                title: 'Hello World!'
+            });
+        }
+
+        function initialize() {
+            var mapCanvas = document.getElementById('map');
+            var mapOptions = {
+                center: new google.maps.LatLng(43.6621332,-79.3780499,17),
+                zoom: 8,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            }
+            var map = new google.maps.Map(mapCanvas, mapOptions)
+        }
+        google.maps.event.addDomListener(window, 'load', initialize);
+
+    </script>
+
+    <!--<link rel="stylesheet" href="reset.css" type="text/css" />-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+    <script src="jquery.blueberry.js"></script>
+    <script>
+        $(window).load(function () {
+            $('.blueberry').blueberry();
+        });
+    </script>
+
+
+    <title>Reality Estate</title>
+</head>
+<body>
+    <header>
+        <a href="index.html" id="logo"></a>
+        <nav>
+            <a href="#" id="menu-icon"></a>
+            <ul>
+                <li><i class="fa fa-home"></i>&nbsp;<a href="index.html">Home</a></li>
+                <li>
+                    <i class="fa fa-arrow-down">&nbsp;</i><a href="#">Properties</a>
+                    <ul>
+                        <li><a href="Yonge-dundas.html">Yonge-Dundas</a></li>
+                        <li><a href="Yonge-eglinton.html">Yonge-Eglinton</a></li>
+                        <li><a href="Waterfront.html">Waterfront</a></li>
+                        <li><a href="Chinatown.html">Chinatown</a></li>
+                        <li><a href="Downtown-west.html">Downtown-West</a></li>
+                    </ul>
+                </li>
+                <li><i class="fa fa-clipboard"></i>&nbsp;<a href="#">Switchboard</a></li>
+                <li><i class="fa fa-phone"></i>&nbsp;<a href="#top" class="current">Contact Us</a></li>
+                <li><i class="fa fa-sitemap"></i>&nbsp;<a href="sitemap_credits.html">Site Map/Credits</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="spacer">
+        &nbsp; &nbsp;
+    </div>
+    <div id="formwrap">
+        <form action="" method="get">
+            <fieldset id="customer_info">
+                <legend>Please Enter Your Personal Info: </legend>
+                <p>
+                    <label for="first_name">First name:</label>
+                    <input type="text" name="first_name" id="first_name" />
+                </p>
+                <p>
+                    <label for="last_name">Last name:</label>
+                    <input type="text" name="last_name" id="last_name" />
+                </p>
+                <p>
+                    <label for="email">E-mail:</label>
+                    <input type="email" name="email" id="email" />
+                </p>
+                <p>
+                    <label for="phone">Phone number:</label>
+                    <input type="tel" name="phone" id="phone" />
+                </p>
+                <br />
+                <p>
+                    <label for="price_range">Price range (approx.):</label>
+                    <input type="number" name="price_range" id="price_range" />
+                </p>
+                <br />
+                <p>
+                    <label for="property_type">Type of property:</label>
+                    <input type="text" name="property_type" id="property_type" />
+                </p>
+                <br />
+                <p>
+                    <label for="num_bedrooms">No. of bedrooms:</label>
+                    <input type="number" name="num_bedrooms" id="num_bedrooms" />
+                </p>
+                <br />
+                <p>
+                    <label for="num_bathrooms">No. of bathrooms:</label>
+                    <input type="number" name="num_bathrooms" id="num_bathrooms" />
+                </p>
+                <br />
+                <p>
+                    <label for="msgbox">Leave Us a Message</label>
+                    <textarea name="textarea" id="textarea" palceholder="Message Us!" cols="30" rows="5"></textarea>
+                </p>
+                <p>
+                    <input type="submit" value="submit" />
+                </p>
+            </fieldset>
+        </form>
+    </div>
+    <div id="info">
+        <h2>We Are located at:</h2>
+        <ul>
+            <li>91 Carlton St
+            <li>Toronto, ON CANADA</li>
+            <li>M5B 2J7</li>
+        </ul>
+        <div id="map">
+        </div>
+        <div class="spacer">
+            &nbsp;&nbsp;&nbsp;
+        </div>
+    </div>
+
+
+
+    <footer>
+        <section>
+            <h3><b>Reality Estate</b></h3>
+            <p><b>416-999-9999</b></p><br /><br />
+            <div class="address">
+                <ul>
+                    <li>91 Carlton St</li>
+                    <li>Toronto, ON CANADA</li>
+                    <li>M5B 2J7</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h3>Connect With Us!</h3>
+            <ul class="social">
+                <li><a href="#"><img src="http://lakemacholidayparks.com.au/wp-content/uploads/2014/09/facebook-icon.png" alt="Facebook" /></a></li>
+                <li><a href="#"><img src="http://www.ilariatoschi.com/images1/bannertwitter.jpg" alt="Twitter" /></a></li>
+                <li><a href="#"><img src="http://www.prospera-events.com/images/LinkedinIcon1.png" alt="LinkedIn" /></a></li>
+            </ul>
+        </section>
+
+        <section>
+            <img src="real_ES.jpg" alt="logo" />
+        </section>
+
+        <footer id="second">
+            <p>Copyright &#169; Philip Laxamana | Centennial College</p>
+        </footer>
+
+    </footer>
+</body>
+</html>
