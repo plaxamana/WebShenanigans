@@ -1,0 +1,47 @@
+html{
+    height: 100%;
+}
+
+body {
+    background: url('imgs/macbook.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+}
+
+#logo {
+    width: 75px;
+}
+
+.navbar-trans{
+    background-color: transparent;
+    background: transparent;
+    border-color: transparent;
+}
+
+.navbar li {
+    color: #000 !important;
+}
+
+.wrapper {
+    width: 1400px;
+}
+
+#content {
+    text-align: center;
+    padding-top: 25%;
+    text-shadow: #000000 1px 0 10px; 
+}
+
+hr {
+    width: 50%;
+    color: #000000;
+    border-top: 1px solid #f8f8f8;
+}
+
+h1{
+    font-weight: 700;
+    font-size: 5em;
+}
